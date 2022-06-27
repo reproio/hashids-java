@@ -161,17 +161,6 @@ public class HashidsTest {
   }
 
   @Test
-  public void test_issue31() {
-    final long[] numbers = new long[500000];
-    long current = Hashids.MAX_NUMBER;
-    for (int i = 0; i < numbers.length; i++) {
-      numbers[i] = current--;
-    }
-    final Hashids a = new Hashids("this is my salt");
-    Assert.assertNotEquals("", a.encode(numbers));
-  }
-
-  @Test
   public void test_issue32() {
     final long num_to_hash = -1;
     final Hashids a = new Hashids("this is my salt");
