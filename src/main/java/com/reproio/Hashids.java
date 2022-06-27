@@ -1,4 +1,4 @@
-package org.hashids;
+package com.reproio;
 
 import java.util.ArrayList;
 import java.util.List;
