@@ -1,22 +1,19 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>org.hashids</groupId>
+  <groupId>com.reproio</groupId>
   <artifactId>hashids</artifactId>
   <version>1.0.3-SNAPSHOT</version>
   <packaging>jar</packaging>
   <name>hashids</name>
   <description>Implementing Hashids algorithm v1.0.0 version(http://hashids.org)</description>
-  <url>https://github.com/jiecao-fm/hashids-java</url>
+  <url>https://github.com/reproio/hashids-java</url>
 
   <distributionManagement>
     <repository>
-      <id>oss.sonatype.org</id>
-      <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+      <id>github</id>
+      <name>GitHub Packages</name>
+      <url>https://maven.pkg.github.com/reproio/hashids-java</url>
     </repository>
-    <snapshotRepository>
-      <id>oss.sonatype.org</id>
-      <url>https://oss.sonatype.org/content/repositories/snapshots</url>
-    </snapshotRepository>
   </distributionManagement>
 
   <licenses>
@@ -35,16 +32,10 @@
 
   <developers>
     <developer>
-      <email>fanweixiao@gmail.com</email>
-      <name>Weixiao Fan</name>
-      <url>https://github.com/fanweixiao</url>
-      <id>fanweixiao</id>
-    </developer>
-    <developer>
-      <email>terciofilho@gmail.com</email>
-      <name>Tercio Gaudencio Filho</name>
-      <url>https://github.com/0x3333</url>
-      <id>0x3333</id>
+      <email>naoto.kaneko@repro.io</email>
+      <name>Naoto Kaneko</name>
+      <url>https://github.com/naoty</url>
+      <id>naoty</id>
     </developer>
   </developers>
 
