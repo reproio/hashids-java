@@ -16,13 +16,6 @@ public class HashidsTest {
     Assert.assertEquals(num_to_hash, b[0]);
   }
 
-  @Test(expected = IllegalArgumentException.class)
-  public void test_large_number_not_supported() {
-    final long num_to_hash = 9007199254740993L;
-    final Hashids a = new Hashids("this is my salt");
-    a.encode(num_to_hash);
-  }
-
   @Test
   public void test_wrong_decoding() {
     final Hashids a = new Hashids("this is my pepper");

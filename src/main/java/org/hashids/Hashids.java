@@ -18,10 +18,6 @@ import java.util.regex.Pattern;
  * @since 0.3.3
  */
 public class Hashids {
-  /**
-   * Max number that can be encoded with Hashids.
-   */
-  public static final long MAX_NUMBER = 9007199254740992L;
 
   private static final String DEFAULT_ALPHABET = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890";
   private static final String DEFAULT_SEPS = "cfhistuCFHISTU";
@@ -136,9 +132,6 @@ public class Hashids {
     for (final long number : numbers) {
       if (number < 0) {
         return "";
-      }
-      if (number > MAX_NUMBER) {
-        throw new IllegalArgumentException("number can not be greater than " + MAX_NUMBER + "L");
       }
     }
     return this._encode(numbers);
