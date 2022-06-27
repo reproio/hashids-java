@@ -107,27 +107,6 @@
         </configuration>
       </plugin>
       <plugin>
-        <groupId>org.sonatype.plugins</groupId>
-        <artifactId>nexus-staging-maven-plugin</artifactId>
-        <version>1.6.5</version>
-        <extensions>true</extensions>
-        <configuration>
-          <serverId>oss.sonatype.org</serverId>
-          <nexusUrl>https://oss.sonatype.org/</nexusUrl>
-          <description>${project.version}</description>
-        </configuration>
-        <executions>
-          <execution>
-            <id>deploy-to-sonatype</id>
-            <phase>deploy</phase>
-            <goals>
-              <goal>deploy</goal>
-              <goal>release</goal>
-            </goals>
-          </execution>
-        </executions>
-      </plugin>
-      <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-jar-plugin</artifactId>
         <configuration>
